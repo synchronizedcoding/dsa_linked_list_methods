@@ -1,5 +1,5 @@
 class Node: #defines class node for new nodes
-    def init(self, d, n = None): #intializes data and the address
+    def __init__(self, d, n = None): #intializes data and the address
         self.data = d
         self.next = n
 
