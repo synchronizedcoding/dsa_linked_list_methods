@@ -1,7 +1,7 @@
 from node import Node
 
 class LinkedList:
-    def init(self, n = None):
+    def __init__(self, n = None):
         self.head = n
         self.size = 0
 
@@ -29,7 +29,7 @@ class LinkedList:
         index = 0 #tracks the position of the node
         while first_node: #loops till the next node is null
             if first_node.get_data() == d: #returns the node user is looking for
-                return index
+                return -1
             else:
                 first_node = first_node.get_next() #moves through the next node if not what is looking for
                 index += 1
