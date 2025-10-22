@@ -15,7 +15,7 @@ class LinkedList:
 
     def display(self):
         current_node = self.head #checks if current node is the head
-        if not this_node:
+        if not current_node:
             print("List is empty.") #if empty return none
             return
         print("Linked List:", end=" ")
