@@ -23,3 +23,13 @@ class LinkedList:
             print(this_node.get_data(), end=" -> ")
             this_node = this_node.get_next()
         print("None") #prints None at the very end of the linked list after the last node
+
+    def find(self, d):
+        first_node = self.head #points the head to the first node of the linked list
+        index = 0 #tracks the position of the node
+        while first_node: #loops till the next node is null
+            if first_node.get_data() == d: #returns the node user is looking for
+                return index
+            else:
+                first_node = first_node.get_next() #moves through the next node if not what is looking for
+                index += 1
